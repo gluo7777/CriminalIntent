@@ -34,6 +34,10 @@ public class Crime {
         return mDate;
     }
 
+    public String getDateString(String format){
+        return (String) android.text.format.DateFormat.format(format,this.getDate());
+    }
+
     public void setDate(Date date) {
         mDate = date;
     }
